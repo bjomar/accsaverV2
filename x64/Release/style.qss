@@ -1,0 +1,68 @@
+QWidget {
+	background-color: grey;
+	font: 12px;
+	color: black; 
+}
+
+QMenu {
+	background-color: lightgrey;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 1.5px;
+	border-color: black; 
+}
+
+	QMenu::item:selected {
+	background-color: #9196c6; 
+}
+
+QSpinBox {
+	background-color: lightgrey;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 5px;
+	border-color: grey;
+	padding-right: 20px;
+	padding: 3px; 
+}
+
+QLineEdit {
+	background-color: lightgrey;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 5px;
+	border-color: grey;
+	padding: 3px; 
+}
+
+QPushButton {
+	background-color: lightgrey;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 8px;
+	border-color: grey;
+	min-width: 75px;
+	padding: 3px; 
+}
+QPushButton:hover {
+	border-color: blue; 
+}
+QPushButton:pressed {
+	border-color: green; 
+}
+
+QMenuBar {
+	background-color: lightgray;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 3px;
+	border-color: black;
+	padding: 1px 
+}
+QMenuBar::item {
+	background-color: #8ba9c6;
+	padding: 2px 
+}	
+QMenuBar::item:selected {
+	background-color: #9196c6; 
+}
