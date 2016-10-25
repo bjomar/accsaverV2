@@ -1,3 +1,5 @@
+/*accsaverV2 Copyright (C) 2016 Bjön Marx*/
+
 #ifndef KEYWINDOW_H
 #define KEYWINDOW_H
 

@@ -65,8 +65,5 @@
     <ClInclude Include="imcludes.h">
       <Filter>Header Dateien</Filter>
     </ClInclude>
-    <ClInclude Include="resource2.h">
-      <Filter>Header Dateien</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>

@@ -1,1 +1,11 @@
-﻿  accsaverV2.vcxproj -> C:\Users\björn\documents\visual studio 2015\Projects\accsaverV2\x64\Release\accsaverV2.exe
+﻿  Moc'ing accsaverv2.h...
+  Moc'ing keywindow.h...
+  moc_accsaverv2.cpp
+  moc_keywindow.cpp
+  accsaverv2.cpp
+  keywindow.cpp
+  main.cpp
+  save_load.cpp
+  Code wird generiert...
+c:\users\björn\documents\visual studio 2015\projects\accsaverv2\accsaverv2\keywindow.cpp(39): warning C4715: "keyWindow::key": Nicht alle Steuerelementpfade geben einen Wert zurück.
+  accsaverV2.vcxproj -> C:\Users\björn\documents\visual studio 2015\Projects\accsaverV2\x64\Release\accsaverV2.exe

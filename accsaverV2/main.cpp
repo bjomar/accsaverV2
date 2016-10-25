@@ -2,6 +2,8 @@
 #include <QtWidgets/QApplication>
 
 /*
+* accsaverV2 Copyright (C) 2016 Bjön Marx
+*
 * known problems:
 *	load wont work if encryption generateds an return if thats the case -> cange the key - might be fixed someday
 *	same id can be saved more than once, only the first counts
@@ -21,7 +23,6 @@
 *
 * wishes:
 *	eventaully get this a little fancy - by myself - done!
-*
 */
 
 //( ͡° ͜ʖ ͡°)

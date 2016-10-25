@@ -3,6 +3,8 @@
 
 #include "ui_global.h"
 
+/*accsaverV2 Copyright (C) 2016 Bjön Marx*/
+
 class __declspec(dllexport) ui
 {
 protected:

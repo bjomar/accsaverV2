@@ -1,3 +1,5 @@
+/*accsaverV2 Copyright (C) 2016 Bjön Marx*/
+
 #include "accsaverv2.h"
 
 accsaverV2::accsaverV2(QWidget *parent)

@@ -1,3 +1,5 @@
+/*accsaverV2 Copyright (C) 2016 Bjön Marx*/
+
 #include "save_load.h"
 
 save_load::save_load(keyWindow* encryptKeyWin)

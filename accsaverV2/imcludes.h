@@ -1,3 +1,5 @@
+/*accsaverV2 Copyright (C) 2016 Bjön Marx*/
+
 #ifndef INCLUDES_H
 #define INCLUDES_H
 

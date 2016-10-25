@@ -1,5 +1,7 @@
 #include "ui.h"
 
+/*accsaverV2 Copyright (C) 2016 Bjön Marx*/
+
 void ui::setupUI(QWidget* parent)
 {
 #pragma region setParents

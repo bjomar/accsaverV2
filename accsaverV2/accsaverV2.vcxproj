@@ -196,7 +196,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="imcludes.h" />
-    <ClInclude Include="resource2.h" />
     <CustomBuild Include="keywindow.h">
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing keywindow.h...</Message>

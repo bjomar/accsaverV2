@@ -1,5 +1,7 @@
 #include "ui_key.h"
 
+/*accsaverV2 Copyright (C) 2016 Bjön Marx*/
+
 void ui_key::setupUI(QWidget * parent)
 {
 	setBtn = new QPushButton("set keys", parent);

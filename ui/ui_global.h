@@ -1,3 +1,5 @@
+/*accsaverV2 Copyright (C) 2016 Bjön Marx*/
+
 #ifndef UI_GLOBAL_H
 #define UI_GLOBAL_H
 

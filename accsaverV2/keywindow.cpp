@@ -1,3 +1,5 @@
+/*accsaverV2 Copyright (C) 2016 Bjön Marx*/
+
 #include "keywindow.h"
 
 keyWindow::keyWindow(QWidget *parent)
