@@ -13,6 +13,8 @@
 *	
 *	fix stylesheet so the menu in menubar isnt invisible - done!
 *
+*	outsource stylesheet - done!
+*
 * add:
 *	add possibility to save new keys (button in keywindow) - done!
 *	copy pass to clipboard after loading or add buttons to do so - done! (gets copied after loading)
