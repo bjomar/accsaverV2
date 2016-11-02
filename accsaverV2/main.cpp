@@ -1,8 +1,7 @@
 ﻿#include "accsaverv2.h"
-#include <QtWidgets/QApplication>
 
 /*
-* accsaverV2 Copyright (C) 2016 Bjön Marx
+* accsaverV2 Copyright (C) 2016 Björn Marx 
 *
 * known problems:
 *	load wont work if encryption generateds an return if thats the case -> cange the key - might be fixed someday

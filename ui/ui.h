@@ -3,7 +3,7 @@
 
 #include "ui_global.h"
 
-/*accsaverV2 Copyright (C) 2016 Bjön Marx*/
+/*accsaverV2 Copyright (C) 2016 Björn Marx*/
 
 class __declspec(dllexport) ui
 {

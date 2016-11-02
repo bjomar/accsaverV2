@@ -1,4 +1,4 @@
-/*accsaverV2 Copyright (C) 2016 Bjön Marx*/
+/*accsaverV2 Copyright (C) 2016 Björn Marx*/
 
 #ifndef UI_KEY_H
 #define UI_KEY_H

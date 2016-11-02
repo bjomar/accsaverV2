@@ -1,4 +1,4 @@
-/*accsaverV2 Copyright (C) 2016 Bjön Marx*/
+/*accsaverV2 Copyright (C) 2016 Björn Marx*/
 
 #include "save_load.h"
 
@@ -18,7 +18,7 @@ void save_load::save(int id, QString accName, QString pass)
 
 	f << id << " " << en_deCrypt(accName.toStdString()) << " " << en_deCrypt(pass.toStdString()) << std::endl;
 
-	f.close();		
+	f.close();
 }
 
 void save_load::load(int id, QLineEdit* accNE, QLineEdit* passE)

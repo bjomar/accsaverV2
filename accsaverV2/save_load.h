@@ -1,4 +1,4 @@
-/*accsaverV2 Copyright (C) 2016 Bjön Marx*/
+/*accsaverV2 Copyright (C) 2016 Björn Marx*/
 
 #ifndef SAVE_LOAD_H
 #define SAVE_LOAD_H
