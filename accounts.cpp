@@ -22,6 +22,11 @@ void accounts::load_from_file(const char* path)
         pass = "";
     }
 
+    //because, i dont know why, there is always an empty one at the end, so we erase it
+    //i bet it soime sort of failure in the saving process, but this fixes it
+    //i rather delete the last read entry than reworking save and delete processes
+    this->account_list.erase(account_list.end());
+
     /*
     QFile f(path);
     if(f.open(QFile::ReadOnly))
@@ -45,6 +50,8 @@ void accounts::load_from_file(const char* path)
 
 void accounts::safe(const char* path)
 {
+    //this safe and load method does not always work so good, but on most occaisions it works pretty well
+    //maybe it wil be changed someday
     std::fstream f;
 
     f.open(path, std::ios::out);
@@ -60,7 +67,7 @@ void accounts::safe(const char* path)
     {
         for(uint i = 0; i < this->account_list.size(); i++)
         {
-            f.write(QString(this->account_list.at(i).first + '\r' + this->account_list.at(i).first).toUtf8());
+            f.write(QString(this->account_list.at(i).first + '\r' + this->account_list.at(i).second).toUtf8());
         }
     }
     f.close();
@@ -70,6 +77,11 @@ void accounts::safe(const char* path)
 void accounts::add(QString name, QString password)
 {
     this->account_list.push_back(std::pair<QString, QString>(name, password));
+}
+
+void accounts::delete_entry(int index)
+{
+    account_list.erase(account_list.begin() + index);
 }
 
 std::pair<QString, QString>& accounts::operator[](int i)

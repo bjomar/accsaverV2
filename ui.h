@@ -3,6 +3,7 @@
 
 #include "main.h"
 #include "accounts.h"
+#include "change_entry.h"
 
 namespace Ui {
 class UI;

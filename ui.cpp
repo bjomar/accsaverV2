@@ -4,7 +4,7 @@
 UI::UI(QWidget *parent) : QWidget(parent), ui(new Ui::UI) {
     ui->setupUi(this);
 
-    //assinging layouts... cuz the designer did not
+    //assinging layouts... cuz the designer did not... thanks Qt
     this->ui->load_tab->setLayout(this->ui->layout_load_page);
     this->ui->manage_tab->setLayout(this->ui->layout_manage_page);
     this->ui->gbox_add_account->setLayout(this->ui->layout_add_account);
@@ -36,6 +36,18 @@ UI::UI(QWidget *parent) : QWidget(parent), ui(new Ui::UI) {
         this->ui->ledit_password->setText("");
     });
 
+    this->connect(ui->btn_change_entry, &QPushButton::clicked, this, [=](){
+        change_entry* ce = new change_entry(_accounts[ui->account_list->currentRow()], ui->ledit_key->text(), this);
+
+        ce->show();
+    });
+
+    this->connect(ui->btn_delete_entry, &QPushButton::clicked, this, [=](){
+        _accounts.delete_entry(ui->account_list->currentRow());
+
+        this->update_accountlist();
+    });
+
     this->connect(this->ui->account_list, &QListWidget::doubleClicked, this, [=]() {
         if(this->ui->rbutton_cpy_pw->isChecked()) //cpy password
             clip->setText(edcryption(this->_accounts[this->ui->account_list->currentRow()].second, this->ui->ledit_key->text()));
@@ -62,14 +74,16 @@ UI::UI(QWidget *parent) : QWidget(parent), ui(new Ui::UI) {
 }
 
 UI::~UI() {
+    //yes, it actually only saves when you quit it
     this->_accounts.safe("save.txt");
     delete ui;
 }
 
+/// updates ui->account_list
 void UI::update_accountlist() {
     this->ui->account_list->clear();
 
-    for(uint i = 0; i < this->_accounts.count()-1; i++)
+    for(uint i = 0; i < this->_accounts.count(); i++)
         this->ui->account_list->addItem(edcryption(this->_accounts[i].first, this->ui->ledit_key->text()));
 }
 

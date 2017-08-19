@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
+    <width>445</width>
     <height>300</height>
    </rect>
   </property>
@@ -19,7 +19,7 @@
      <item row="0" column="0">
       <widget class="QTabWidget" name="tabWidget">
        <property name="currentIndex">
-        <number>1</number>
+        <number>0</number>
        </property>
        <widget class="QWidget" name="load_tab">
         <attribute name="title">
@@ -30,7 +30,7 @@
           <rect>
            <x>10</x>
            <y>10</y>
-           <width>351</width>
+           <width>401</width>
            <height>231</height>
           </rect>
          </property>
@@ -55,7 +55,7 @@
            </widget>
           </item>
           <item row="1" column="2">
-           <widget class="QPushButton" name="useless_button">
+           <widget class="QPushButton" name="btn_change_entry">
             <property name="enabled">
              <bool>true</bool>
             </property>
@@ -66,10 +66,10 @@
              </sizepolicy>
             </property>
             <property name="cursor">
-             <cursorShape>WaitCursor</cursorShape>
+             <cursorShape>PointingHandCursor</cursorShape>
             </property>
             <property name="text">
-             <string>PushButton</string>
+             <string>change entry</string>
             </property>
             <property name="autoDefault">
              <bool>false</bool>
@@ -82,15 +82,31 @@
             </property>
            </widget>
           </item>
-          <item row="0" column="0" colspan="3">
-           <widget class="QListWidget" name="account_list"/>
-          </item>
           <item row="1" column="1">
            <widget class="QRadioButton" name="rbutton_cpy_pw">
             <property name="text">
              <string>copy password</string>
             </property>
            </widget>
+          </item>
+          <item row="1" column="3">
+           <widget class="QPushButton" name="btn_delete_entry">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="text">
+             <string>delete entry</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0" colspan="4">
+           <widget class="QListWidget" name="account_list"/>
           </item>
          </layout>
         </widget>

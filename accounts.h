@@ -6,12 +6,15 @@
 class accounts
 {
 public:
+    using account = std::pair<QString, QString>;
+
     accounts();
 
     void load_from_file(const char *path);
     void safe(const char *path);
 
     void add(QString name, QString password);
+    void delete_entry(int index);
 
     std::pair<QString, QString>& operator[](const int i);
 

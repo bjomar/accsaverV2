@@ -25,12 +25,15 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += main.cpp\
         ui.cpp \
-    accounts.cpp
+    accounts.cpp \
+    change_entry.cpp
 
 HEADERS  += ui.h \
     accounts.h \
-    main.h
+    main.h \
+    change_entry.h
 
-FORMS    += ui.ui
+FORMS    += ui.ui \
+    change_entry.ui
 
 DISTFILES +=
