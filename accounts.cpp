@@ -23,8 +23,8 @@ void accounts::load_from_file(const char* path)
     }
 
     //because, i dont know why, there is always an empty one at the end, so we erase it
-    //i bet it soime sort of failure in the saving process, but this fixes it
-    //i rather delete the last read entry than reworking save and delete processes
+    //i think it might be some sort of failure in the saving process, but this fixes it.
+    //but, i rather do this than rewriting the save and load process.
     this->account_list.erase(account_list.end());
 
     /*
